@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Amazon">
+	<test name="Checklist">
+
+		<groups>
+			<run>
+				<include name="sanity">
+				</include>
+			</run>
+		</groups>
+
+		<parameter name="userName" value="admin"></parameter>
+		<parameter name="password" value="admin123"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+
+		<classes>
+			<class name="login.VerifyAmazonSearch" />
+			<class name="login.VerifyLoginFunctionality" />
+			<class name="browser.GoogleSearch" />
+		</classes>
+
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
